@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import GitHubIcon from '../components/icons/GitHub.astro'
+import SocialPill from '../components/icons/SocialPill.astro'
+
 const text = ["Sebastian", "Web Debeloper", "Fontend Developer"]
 
 const getText = text.map((item, index) => {
@@ -15,7 +19,7 @@ setInterval(() => {
 
 <Layout title="Porfolio Sebastian Gaggero">
 	<main>
-		<section class="w-full py-20 px-96">
+		<section class="w-full lg:w-[740] py-20 px-96">
 			<img 
 				class="rounded-full w-28 h-28 mb-6" 
 				src="me.webp" 
@@ -41,6 +45,18 @@ setInterval(() => {
 					quo cupiditate culpa ad quaerat blanditiis recusandae dolores sint tempora? Fuga iste recusandae adipisci necessitatibus!
 				</p>
 			</h2>
+			<ul>
+				<nav class="flex gap-x-2">
+					<SocialPill href="https://www.linkedin.com/in/sebastiangaggero/">
+						<LinkedInIcon class="w-6 h-6" />
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/SrMetus/">
+						<GitHubIcon class="w-6 h-6" />
+						GitHub
+					</SocialPill>
+				</nav>
+			</ul>
 		</section>
 	</main>
 </Layout>
