@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro'
 
 import LinkedInIcon from '../components/icons/LinkedIn.astro'
 import GitHubIcon from '../components/icons/GitHub.astro'
+import EmailIcon from '../components/icons/Email.astro'
 import SocialPill from '../components/icons/SocialPill.astro'
 
 const text = ["Sebastian", "Web Debeloper", "Fontend Developer"]
@@ -46,7 +47,7 @@ setInterval(() => {
 				</p>
 			</h2>
 			<ul>
-				<nav class="flex gap-x-2">
+				<nav class="flex gap-x-3">
 					<SocialPill href="https://www.linkedin.com/in/sebastiangaggero/">
 						<LinkedInIcon class="w-6 h-6" />
 						LinkedIn
@@ -54,6 +55,10 @@ setInterval(() => {
 					<SocialPill href="https://github.com/SrMetus/">
 						<GitHubIcon class="w-6 h-6" />
 						GitHub
+					</SocialPill>
+					<SocialPill href="mailto:s.gaggero87@gmail.com">
+						<EmailIcon class="w-6 h-6" />
+						s.gaggero87@gmail.com
 					</SocialPill>
 				</nav>
 			</ul>
